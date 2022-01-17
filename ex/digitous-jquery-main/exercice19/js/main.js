@@ -2,6 +2,5 @@
 
 
 $(".btn").click(function(){
-    $("#text").removeAttr("text")
+    $("#input").removeAttr("disabled")
 });
-  
