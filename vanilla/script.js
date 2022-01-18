@@ -17,8 +17,8 @@ console.log(title.style);
 title.style.fontFamily = "Helvetica";
 
 // jQuery utilise querySelector
-function $(elementNane) {
-    return document.querySelector(elementNane);
+function $(elementName) {
+    return document.querySelector(elementName);
 }
 console.log("H1:", $("h1"));
 

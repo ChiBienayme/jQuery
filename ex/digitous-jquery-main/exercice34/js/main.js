@@ -1,12 +1,12 @@
 
 $("button").click(function () {
-
+    $("input").val("");
     $.ajax({
-        url:"https://restcountries.com/v3.1/name/france",
+        url:"https://restcountries.com/v3.1/name/usa",
         success: function (data) {
 
             data.forEach((country) => {
-            $("input").val("");
+            
             $("#country").html(`${country.name.common}`);
             $("#capital").html(`${country.capital}`);
             })
@@ -15,5 +15,11 @@ $("button").click(function () {
     
   });
 
-  
+// document.addEventListener('button', () => {
+//     let countries;
+//     fetch('https://restcountries.eu/v3.1/name/france')
+//     .then(res => {
 
+//         countries = res.data.countries;
+//     })
+// })
